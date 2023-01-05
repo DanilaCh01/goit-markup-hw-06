@@ -1093,6 +1093,8 @@ ul {
     width: 528px;
     height: 581px;
 
+    padding: 40px;
+
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1104,11 +1106,15 @@ ul {
 
 .modal-button {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     top:8px;
     right: 8px;
 
+    padding:0;
     cursor: pointer;
     
     background-color: var(--primary-white-color);
@@ -1123,6 +1129,7 @@ ul {
 .icon.black {
     fill:var(--full-black-color);
 }
+
 /* KOKOKKOKOKOKOKOKOKOKOKOKOKOKOKOKOKO */
 
 
@@ -1130,11 +1137,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 23px;
-    margin-top: 40px;
+    margin-bottom: 12px;
 
     font-size: 20px;
-    line-height: 1.15px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     
@@ -1144,7 +1150,7 @@ ul {
 .form-item-1 {
     width: 448px;
     max-height: 58px;
-    margin: 12px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
 .form-item-2 {
@@ -1163,6 +1169,10 @@ ul {
     width: 448px;
     max-height: 138px;
     margin: 12px 0px 20px 0px;
+}
+
+.form-item-1-area .form-la {
+    height: 138px;
 }
 
 .form-la {
@@ -1249,7 +1259,7 @@ ul {
 .form-area {
     width: 448px;
     height: 120px;
-    margin-top: 10px;
+    margin-top: 4px;
     padding: 12px 16px;
     resize: none;
     outline: none;
@@ -1285,6 +1295,13 @@ ul {
 
 .policy-field {
     position: relative;
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    
+        letter-spacing: 0.03em;
+    
+        color: var(--secondary-text-color);
 }
 
 .policy-link {
