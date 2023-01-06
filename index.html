@@ -75,6 +75,13 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <button class="modal-button" type="button" data-modal-close>
+                <svg class="icon black" width="11px" height="11px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-close"
+                  ></use>
+                </svg>
+              </button>
               <form>
                 <strong class="modal-header">
                   Залиште свої дані, ми вам передзвонимо
@@ -119,28 +126,28 @@
                     Коментар
                     <textarea
                       class="form-area"
-                      type="text"
                       name="comment"
                       placeholder="Введіть текст"
                     ></textarea>
                   </label>
+                </div>
                 <div class="policy-box">
-            <div role="group" class="policy">
-              <label class="policy-field">
-                Погоджуюся з розсилкою та приймаю <a href="#" class="policy-link">Умови договору</a>
-                <input type="checkbox" name="checkbox" value="contract" class="checkbox visually-hidden" />
-                <span class="checkbox-icon"></span>
-              </label>
-            </div>
-                <button class="modal-send" type="submit">Відправити</button>
-          </form>
-              <button class="modal-button" type="button" data-modal-close>
-                <svg class="icon black" width="11px" height="11px">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-close"
-                  ></use>
-                </svg>
-              </button>
+                  <div role="group" class="policy">
+                    <label class="policy-field">
+                      Погоджуюся з розсилкою та приймаю
+                      <a href="#" class="policy-link">Умови договору</a>
+                      <input
+                        type="checkbox"
+                        name="checkbox"
+                        value="contract"
+                        class="checkbox visually-hidden"
+                      />
+                      <span class="checkbox-icon"></span>
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="modal-send">Відправити</button>
+              </form>
             </div>
           </div>
         </div>
@@ -587,12 +594,10 @@
         <div class="footer-container-third">
           <p class="f-third-header">Підпишіться на розсилку</p>
           <form class="f-form">
-            <label for="email"></label>
             <input
               type="email"
               class="f-input"
               name="email"
-              id="user-email"
               placeholder="Email"
             />
             <button class="f-third-button" type="submit">

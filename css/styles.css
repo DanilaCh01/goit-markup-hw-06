@@ -1166,18 +1166,14 @@ ul {
 }
 
 .form-item-1-area {
-    width: 448px;
+    width: 100%;
     max-height: 138px;
-    margin: 12px 0px 20px 0px;
-}
-
-.form-item-1-area .form-la {
-    height: 138px;
+    margin: 0px 0px 20px 0px;
 }
 
 .form-la {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 100%;
     
     font-size: 12px;
@@ -1185,10 +1181,6 @@ ul {
     letter-spacing: 0.01em;
     color: var(--secondary-text-color);
     outline: none;
-}
-
-.form-la:nth-child(1) {
-    margin-bottom: 20px;
 }
 
 .form-in {
@@ -1227,7 +1219,6 @@ ul {
 }
 
 .modal-send {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1235,8 +1226,8 @@ ul {
     width: 200px;
     height: 50px;
 
-    left: 165px;
-    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 700;
     font-size: 16px;
@@ -1249,6 +1240,8 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
 }
 
 .modal-send:hover,
@@ -1257,6 +1250,7 @@ ul {
 }
 
 .form-area {
+    display: block;
     width: 448px;
     height: 120px;
     margin-top: 4px;
@@ -1287,10 +1281,10 @@ ul {
 .policy-box {
     display: block;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .policy {
-    margin-bottom: 30px;
 }
 
 .policy-field {
